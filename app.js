@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(
     cors({
         origin: [
-            "https://blood-bank-frontend-silk.vercel.app/",
+            "*"
         ],
         credentials: true,
     })
