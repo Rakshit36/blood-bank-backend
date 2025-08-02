@@ -11,11 +11,11 @@ const port = 3177;
 // Middleware setup
 app.use(cookieParser());
 app.use(express.json());
+
+// Allow all origins
 app.use(
     cors({
-        origin: [
-            "https://blood-bank-frontend-silk.vercel.app"
-        ],
+        origin: true,
         credentials: true,
     })
 );
